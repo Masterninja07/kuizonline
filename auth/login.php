@@ -1,5 +1,5 @@
 <?php
-include "sambungan.php";
+include "../sambungan.php";
 session_start();
 
 if (isset($_POST['userid'])) {
@@ -33,20 +33,25 @@ if (isset($_POST['userid'])) {
     }
 
     if ($jumpa == true) {
-        header("Location: utama.html");
+        header("Location: ../menu/utama.html");//EDIT
     } else {
-        echo "<script>alert('kesalahan pada username atau password');
-        window.location='login.php'</script>";
+        echo "<script>
+        alert('kesalahan pada username atau password');
+        window.location='login.php'
+        </script>";
     }
 }
 ?>
-<link rel="stylesheet" href="borang.css">
-<link rel="stylesheet" href="button.css">
+<!-- EDITTTTTTTTTTTTT  -->
+<link rel="stylesheet" href="../css/borang.css">
+<link rel="stylesheet" href="../css/button.css">
 
 <body background="wood.jpg">
+
     <center>
         <img src="tajuk1.png"><br><img src="tajuk2.png">
     </center>
+
     <h3 class="pendek">SIGN IN</h3>
     <form action="login.php" class="pendek" method="post" class="login">
         <table>
@@ -60,6 +65,7 @@ if (isset($_POST['userid'])) {
             </tr>
         </table>
         <button class="login" type="submit">Login</button>
-        <button class="signup" type="button" onclick="window.location='pelajar_insert.html'">Sign Up</button>
+        <!-- MAYBE WRONG -->
+        <button class="signup" type="button" onclick="window.location='../pelajar/pelajar_insert.html'">SignUp</button>
     </form>
 </body>

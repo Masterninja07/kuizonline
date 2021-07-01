@@ -4,7 +4,7 @@ $status = $_SESSION['status'];
 $nama = $_SESSION['nama'];
 
 echo '
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <div>
     <h1>Main Menu</h1>
     <h2>$nama</h2>
@@ -21,7 +21,7 @@ if  ($status =="guru") {
     <li><a href="menu_soalan.html" target="menu">Soalan</a></li>
     <li><a href="laporan_pilihan.php" target="kandungan">Laporan</a></li>
     <li><a href="import.html" target="kandungan">Import</a></li>
-    <li><a href="logout.html" tabindex="_top">Keluar</a></li>
+    <li><a href="../auth/logout.php" target="_top">Keluar</a></li>
     </ul>
     </div>
 ');
@@ -31,7 +31,7 @@ echo ('
     <ul>
     <li><a href="home.html" target="kandungan">Home</a></li>
     <li><a href="jawab_mula.php" target="kandungan">Soalan</a></li>
-    <li><a href="logout.php" target="_top">Keluar</a></li>  
+    <li><a href="../auth/logout.php" target="_top">Keluar</a></li>  
     </ul>
     </div>
 ');

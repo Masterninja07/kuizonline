@@ -1,5 +1,5 @@
 <?php
-include 'sambungan.php';
+include '../sambungan.php';
 
 if (isset($_POST['idpelajar'])) {
 
@@ -17,8 +17,8 @@ if (isset($_POST['idpelajar'])) {
     }
 }
 ?>
-<link rel="stylesheet" href="borang.css">
-<link rel="stylesheet" href="button.css">
+<link rel="stylesheet" href="../css/borang.css">
+<link rel="stylesheet" href="../css/button.css">
 
 <body background="">
     <center>
@@ -42,11 +42,14 @@ if (isset($_POST['idpelajar'])) {
                 <td>
                     <select name="idkelas">
                         <?php
+
 $sql = "select * from kelas";
 $data = mysqli_query($sambungan, $sql);
+
 while ($kelas = mysqli_fetch_array($data)) {
     echo "<option value='$kelas[idkelas]'>$kelas[namakelas]</option>";
 }
+
 ?>
                     </select>
                 </td>

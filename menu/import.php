@@ -1,5 +1,5 @@
 <?php
-include 'sambungan.php';
+include ("../sambungan.php");
 $namajadual = $_POST["namatable"];
 $namafail = $_FILES["namafail"]["name"];
 
@@ -13,7 +13,11 @@ while (!feof($fail)) {
         $namapelajar = $medan[1];
         $idkelas = $medan[2];
         $password = $medan[3];
-        $sql = "insert into pelajar values('$idpelajar','$namapelajar','$idkelas','$password')";
+        $sql = "insert into pelajar values(
+            '$idpelajar',
+            '$namapelajar',
+            '$idkelas',
+            '$password')";
         if (mysqli_query($sambungan, $sql)) {
             $berjaya = true;
         } else {
@@ -29,8 +33,14 @@ while (!feof($fail)) {
         $pilihanc = $medan[4];
         $jawapan = $medan[5];
         $idguru = $medan[6];
-        $sql = "insert into soalan values('$idsoalan','$namasoalan','$pilihana',
-		'$pilihanb','$pilihanc','$jawapan','$idguru')";
+        $sql = "insert into soalan values(
+        '$idsoalan',
+        '$namasoalan',
+        '$pilihana',
+		'$pilihanb',
+        '$pilihanc',
+        '$jawapan',
+        '$idguru')";
 
         if (mysqli_query($sambungan, $sql)) {
             $berjaya = true;
@@ -45,6 +55,5 @@ if ($berjaya == true) {
 } else {
     echo "<script>alert('Rekod tidak berjaya di import');</script>";
 }
-
 mysqli_close($sambungan);
 ?>

@@ -1,6 +1,6 @@
 <html>
-<link rel="stylesheet" href="borang.css">
-<link rel="stylesheet" href="button.css">
+<link rel="stylesheet" href="../css/borang.css">
+<link rel="stylesheet" href="../css/button.css">
 
 <body>
     <table>
@@ -12,7 +12,7 @@
             <th>Peratus</th>
         </tr>
         <?php 
-include "sambungan.php";
+include ("../sambungan.php");
 $pilihan = $_POST["pilihan"];
 $idkelas = $_POST["idkelas"];
 $peratus = $_POST["peratus"];

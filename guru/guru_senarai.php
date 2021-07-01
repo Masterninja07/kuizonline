@@ -1,7 +1,7 @@
 <?php
 include("../sambungan.php");
 ?>
-<link rel="stylesheet" href="senarai.css">
+<link rel="stylesheet" href="../css/senarai.css">
 <table>
     <caption>SENARAI NAMA GURU</caption>
     <tr>
