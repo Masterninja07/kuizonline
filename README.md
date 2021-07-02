@@ -14,6 +14,8 @@
 ### 3. In your browser:
 >**localhost/kuizonline2/login.php**
 
+### 4. Change your image yourself by replacing it on the main directory
+
 
 
 
