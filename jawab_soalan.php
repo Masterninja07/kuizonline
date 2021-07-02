@@ -3,7 +3,7 @@ include ("sambungan.php");
 
 ?>
 <html>
-<link rel="stylesheet" href="borang.css">
+<link rel="stylesheet" href="senarai.css">
 <link rel="stylesheet" href="button.css">
 
 <body>
@@ -21,16 +21,17 @@ include ("sambungan.php");
             while ($soalan = mysqli_fetch_array($data)){
             ?>
             <tr>
-                <td class="bil"><?php echo $bil;?></td>
-                <td class="soalan"><?php echo $soalan['namasoalan'];?><br>
+                <td class="bil"><?php echo $bil; ?></td>
+                <td class="soalan">
+                    <?php echo $soalan['namasoalan']; ?><br>
                     <input type="radio" name="<?php echo $soalan['idsoalan'];?>" value="A">
                     <?php echo "A. ".$soalan["pilihana"]?><br>
 
                     <input type="radio" name="<?php echo $soalan['idsoalan'];?>" value="B">
-                    <?php echo "A. ".$soalan["pilihanb"]?><br>
+                    <?php echo "B. ".$soalan["pilihanb"]?><br>
 
                     <input type="radio" name="<?php echo $soalan['idsoalan'];?>" value="C">
-                    <?php echo "A. ".$soalan["pilihanc"]?><br>
+                    <?php echo "C. ".$soalan["pilihanc"]?><br>
                 </td>
             </tr>
 

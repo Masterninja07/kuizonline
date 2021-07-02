@@ -1,5 +1,5 @@
 <html>
-<link rel="stylesheet" href="borang.css">
+<link rel="stylesheet" href="senarai.css">
 <link rel="stylesheet" href="button.css">
 
 <body>
@@ -18,8 +18,8 @@ $idkelas = $_POST["idkelas"];
 $peratus = $_POST["peratus"];
 
 $sql = "select * from kuiz
-join pelajar on kuiz.idpelajar=pelajar.idpelajar
-join pelajar on pelajar.idkelas=kelas.idkelas group by kuiz.idpelajar";
+join pelajar on kuiz.idpelajar = pelajar.idpelajar
+join kelas on pelajar.idkelas = kelas.idkelas group by kuiz.idpelajar";
 
 switch($pilihan){
 	case 1 : $syarat ="";

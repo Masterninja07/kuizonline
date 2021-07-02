@@ -28,7 +28,7 @@ if (session_status() == PHP_SESSION_NONE) {
     $data = mysqli_query($sambungan, $sql);
     $bil = 1;
 
-    while($kuiz - mysqli_fetch_array($data)){
+    while($kuiz = mysqli_fetch_array($data)){
     ?>
     <tr>
         <td class="bil"><?php echo $bil; ?></td>
@@ -88,7 +88,7 @@ $data = mysqli_query($sambungan, $sql);
         <td class="keputusan"><?php echo $jumlah?></td>
     </tr>
     <tr>
-        <td class="keputusan">Jeputusan</td>
+        <td class="keputusan">Keputusan</td>
         <td class="keputusan"><?php echo number_format($peratus,0)?>%</td>
     </tr>
 </table>

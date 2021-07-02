@@ -24,12 +24,12 @@ th {
     border: 2px solid purple;
 }
 
-tb.bil {
+td.bil {
     width: 20px;
 }
 
 td.soalan {
-    width: 300px;
+    width: 600px;
     text-align: left;
 }
 

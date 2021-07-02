@@ -13,12 +13,7 @@ $data = mysqli_query($sambungan, $sql);
 while ($soalan = mysqli_fetch_array($data)) {
     $idsoalan = $soalan["idsoalan"];
     $jawapanpelajar = $_POST["idsoalan"];
-    $sql = "insert into kuiz values(
-        '$idpelajar',
-        '$idsoalan',
-        '$tarikh',
-        '$jawapanpelajar',
-        0)";
+    $sql = "insert into kuiz values('$idpelajar','$idsoalan','$tarikh','$jawapanpelajar',0)";
     $datakuiz = mysqli_query($sambungan, $sql);
     }
 include ("jawab_ulangkaji.php");
