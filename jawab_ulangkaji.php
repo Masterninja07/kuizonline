@@ -1,5 +1,5 @@
 <?php
-include "sambungan.php";
+include ('sambungan.php');
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -48,9 +48,9 @@ if (session_status() == PHP_SESSION_NONE) {
             if($kuiz['pilih']==$kuiz['jawapan']){
                 echo "<img src='betul.png'>";
                 $betul = $betul + 1;
-            }else {
+            }else 
                 echo "<img src='salah.png'>";
-            }
+            
             ?>
         </td>
     </tr>

@@ -1,7 +1,7 @@
 <?php
-include ("sambungan.php");
-
+include('sambungan.php');
 ?>
+
 <html>
 <link rel="stylesheet" href="senarai.css">
 <link rel="stylesheet" href="button.css">
@@ -25,18 +25,16 @@ include ("sambungan.php");
                 <td class="soalan">
                     <?php echo $soalan['namasoalan']; ?><br>
                     <input type="radio" name="<?php echo $soalan['idsoalan'];?>" value="A">
-                    <?php echo "A. ".$soalan["pilihana"]?><br>
-
+                    <?php echo "A. ".$soalan['pilihana']; ?><br>
                     <input type="radio" name="<?php echo $soalan['idsoalan'];?>" value="B">
-                    <?php echo "B. ".$soalan["pilihanb"]?><br>
-
+                    <?php echo "B. ".$soalan['pilihanb']; ?><br>
                     <input type="radio" name="<?php echo $soalan['idsoalan'];?>" value="C">
-                    <?php echo "C. ".$soalan["pilihanc"]?><br>
+                    <?php echo "B. ".$soalan['pilihanc']; ?><br>
+
+
                 </td>
             </tr>
-
-            <?php $bil = $bil + 1;} ?>
-
+            <?php $bil = $bil = 1; } ?>
         </table>
         <button type="submit" class="semak">Semak</button>
     </form>

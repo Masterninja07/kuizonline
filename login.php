@@ -66,6 +66,6 @@ if (isset($_POST['userid'])) {
         </table>
         <button class="login" type="submit">Login</button>
         <!-- MAYBE WRONG -->
-        <button class="signup" type="button" onclick="window.location='pelajar_insert.html'">SignUp</button>
+        <button class="signup" type="button" onclick="window.location='signup.php'">Sign Up</button>
     </form>
 </body>
