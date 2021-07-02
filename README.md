@@ -1,15 +1,19 @@
 # I KNOW WHY YOU ARE HERE
-KERJA KHURSUS LEVEL 1 (NOT FROM SYUKRI)
+## KUIZONLINE LEVEL 1
 
-1. Type this in command line
->git clone https://github.com/Masterninja07/kuizonline
-
-
-
-2.rename kuizonline folder if you want to have a test 
-
-
-
-3.go to localhost/CHANGED_NAME/login.php
+### WILL UPDATE IF THERE'S FIXABLE BUGS 
 
 ![preview](https://i.imgur.com/zldfUSy.png)
+
+### 1.Type this in command line
+>**git clone https://github.com/Masterninja07/kuizonline.git**
+
+### 2. Rename kuizonline folder and move folder to 
+>**/xampp/htdocs/kuizonline2**
+
+### 3. In your browser:
+>**localhost/kuizonline2/login.php**
+
+
+
+
