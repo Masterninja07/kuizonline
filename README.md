@@ -5,6 +5,18 @@
 
 ![preview](https://i.imgur.com/zldfUSy.png)
 
+
+
+
+
+
+
+
+
+
+
+
+
 ### 1.Type this in command line
 >**git clone https://github.com/Masterninja07/kuizonline.git**
 
