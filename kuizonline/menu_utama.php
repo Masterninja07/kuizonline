@@ -6,7 +6,7 @@ $nama = $_SESSION['nama'];
 echo "
     <link rel='stylesheet' href='menu.css'>
     <div>
-    <h1>Main Menu</h1>
+    <h1>MAIN MENU</h1>
     <h2>$nama</h2>
 ";
 
