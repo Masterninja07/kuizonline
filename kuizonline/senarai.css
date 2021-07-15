@@ -21,7 +21,7 @@ caption {
 td,
 th {
     padding: 8px;
-    border: 2px solid purple;
+    border: 2px solid rgb(26, 73, 80);
 }
 
 td.bil {
@@ -43,15 +43,15 @@ td.keputusan {
 }
 
 tr:nth-child(odd) {
-    background-color: thistle;
+    background-color: rgba(191, 216, 214, 0.8);
 }
 
 tr:nth-child(even) {
-    background-color: lavender;
+    background-color: rgba(230, 250, 241, 0.8);
 }
 
 th {
     font-weight: bold;
     color: white;
-    background-color: darkviolet;
+    background-color: rgb(16, 114, 93);
 }

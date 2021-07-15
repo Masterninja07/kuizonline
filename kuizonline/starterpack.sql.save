@@ -1,4 +1,3 @@
-
 --CREATE TABLE
 create table kelas(
 idkelas varchar(3) primary key not null, 
@@ -17,10 +16,10 @@ password varchar(8));
 
 create table soalan(
 idsoalan varchar(3) primary key not null,
-namasoalan varchar(100),
-pilihana varchar(100),
-pilihanb varchar(100),
-pilihanc varchar(100),
+namasoalan varchar(30),
+pilihana varchar(30),
+pilihanb varchar(30),
+pilihanc varchar(30),
 jawapan varchar(1),
 idguru varchar(3));
 
@@ -29,7 +28,7 @@ idpelajar varchar(4) not null,
 idsoalan varchar(4) not null,
 tarikh varchar(10),
 pilih varchar(1),
-peratus int,
+peratus int, 
 primary key(idpelajar, idsoalan));
 
 --DELETE DATA JADUAL

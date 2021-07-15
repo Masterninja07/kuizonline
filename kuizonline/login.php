@@ -8,10 +8,10 @@ if (isset($_POST['userid'])) {
 
     $sql = "select * from pelajar";
     $result = mysqli_query($sambungan, $sql);
-    $jumpa = false;
+    $jumpa = FALSE;
     while ($pelajar = mysqli_fetch_array($result)) {
-        if ($pelajar['idpelajar'] == $userid && $pelajar['password'] == $password) {
-            $jumpa = true;
+        if ($pelajar['idpelajar'] == $userid && $pelajar["password"] == $password) {
+            $jumpa = TRUE;
             $_SESSION['username'] = $pelajar['idpelajar'];
             $_SESSION['nama'] = $pelajar['namapelajar'];
             $_SESSION['status'] = 'pelajar';
@@ -19,20 +19,21 @@ if (isset($_POST['userid'])) {
         }
     }
 
-    if ($jumpa == false) {
+    if ($jumpa == FALSE) {
         $sql = "select * from guru";
         $result = mysqli_query($sambungan, $sql);
         while ($guru = mysqli_fetch_array($result)) {
             if ($guru['idguru'] == $userid && $guru['password'] == $password) {
-                $jumpa = true;
+                $jumpa = TRUE;
                 $_SESSION['username'] = $guru['idguru'];
                 $_SESSION['nama'] = $guru['namaguru'];
                 $_SESSION['status'] = 'guru';
+                break;
             }
         }
     }
 
-    if ($jumpa == true) {
+    if ($jumpa == TRUE) {
         header("Location:utama.html");//EDIT
     } else {
         echo "<script>

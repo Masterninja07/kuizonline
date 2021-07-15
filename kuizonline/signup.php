@@ -59,7 +59,7 @@ while ($kelas = mysqli_fetch_array($data)) {
                 <td><input type="password" name="password" placeholder="max: 8 char"></td>
             </tr>
         </table>
-        <button type="submit" class="tambah">Daftar</button>
+        <button type="submit" class="tambah" onclick="window.location='login.php'">Daftar</button>
         <button type="button" class="padam" onclick="window.location='login.php'">Batal</button>
     </form>
 </body>

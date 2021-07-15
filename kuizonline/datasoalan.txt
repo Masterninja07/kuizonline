@@ -1,1 +1,6 @@
-S02,Saya di mana?,Malaysia,Singapura,Indonesia,A,G01
+S01,Apakah ciri struktur respirasi bagi organisma bersaiz besar?,Nipis-lembap-jaringan kapilari darah,Tebal-lembap-otot kapilari darah,Nipis-kering-jaringan alveolus,A,G01
+S02,Bagaimanakah katak menjalankan pertukaran gas?,Alveolus dan insang,Trakeol dan kulit,Kulit dan peparu,C,G01
+S03,Manakah benar apabila menarik nafas?,Sangkar rusuk bergerak ke bawah,Diafragma menjadi leper dan mendatar,Tekanan tinggi menolak udara ke luar,B,G01
+S04,Oksigen bergabung dengan hemoglobin membentuk:,Hemokgloksin,Oksihemoglobin,Oksiglobina,B,G01
+S05,Karbon dioksida bergabung dengan hemoglobin membentuk:,Karbohemoglobin,Hemoglokarbina,Karbaminohemoglobin,C,G01
+S06,Manakah betul tentang emfisema?,Dinding alveolus rosak,Bronkiol menjadi hitam,Laluan udara tersumbat,A,G01

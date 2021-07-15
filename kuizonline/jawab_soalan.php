@@ -29,7 +29,7 @@ include('sambungan.php');
                     <input type="radio" name="<?php echo $soalan['idsoalan'];?>" value="B">
                     <?php echo "B. ".$soalan['pilihanb']; ?><br>
                     <input type="radio" name="<?php echo $soalan['idsoalan'];?>" value="C">
-                    <?php echo "B. ".$soalan['pilihanc']; ?><br>
+                    <?php echo "C. ".$soalan['pilihanc']; ?><br>
 
 
                 </td>
