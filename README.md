@@ -3,7 +3,7 @@
 
 ### WILL UPDATE IF THERE'S FIXABLE BUGS 
 
-![preview](https://i.imgur.com/zldfUSy.png)
+![preview](https://imgur.com/a/nS6ibuE)
 
 
 
