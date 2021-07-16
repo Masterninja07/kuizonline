@@ -53,7 +53,7 @@ if (isset($_POST['userid'])) {
         <img src="tajuk1.png"><br><img src="tajuk2.png">
     </center>
 
-    <h3 class="pendek">SIGN IN</h3>
+    <h3 class="pendek"><img src="signintext.png" alt="Sign In"></h3>
     <form action="login.php" class="pendek" method="post" class="login">
         <table>
             <tr>
@@ -65,8 +65,9 @@ if (isset($_POST['userid'])) {
                 <td><input type="password" name="password" placeholder="password"></td>
             </tr>
         </table>
-        <button class="login" type="submit">Login</button>
+        <button class="login" type="submit"><img src="logintext.png" alt="login"></button>
         <!-- MAYBE WRONG -->
-        <button class="signup" type="button" onclick="window.location='signup.php'">Sign Up</button>
+        <button class="signup" type="button" onclick="window.location='signup.php'"><img src="signuptext.png"
+                alt="signup"></button>
     </form>
 </body>

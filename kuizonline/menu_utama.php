@@ -14,14 +14,14 @@ echo "
 if($status =="guru") {
     echo('
     <ul>
-    <li><a href="home.html" target="kandungan">Home</a></li>
-    <li><a href="menu_guru.html" target="menu">Guru</a></li>
-    <li><a href="menu_pelajar.html" target="menu">Pelajar</a></li>
-    <li><a href="menu_kelas.html" target="menu">Kelas</a></li>
-    <li><a href="menu_soalan.html" target="menu">Soalan</a></li>
-    <li><a href="laporan_pilihan.php" target="kandungan">Laporan</a></li>
-    <li><a href="import.html" target="kandungan">Import</a></li>
-    <li><a href="logout.php" target="_top">Keluar</a></li>
+    <li><a class=home href="home.html" target="kandungan">Home</a></li>
+    <li><a class=guru href="menu_guru.html" target="menu">Guru</a></li>
+    <li><a class=pelajar href="menu_pelajar.html" target="menu">Pelajar</a></li>
+    <li><a class=kelas href="menu_kelas.html" target="menu">Kelas</a></li>
+    <li><a class=soalan href="menu_soalan.html" target="menu">Soalan</a></li>
+    <li><a class=laporan href="laporan_pilihan.php" target="kandungan">Laporan</a></li>
+    <li><a class=import href="import.html" target="kandungan">Import</a></li>
+    <li><a class=logout href="logout.php" target="_top">Keluar</a></li>
     </ul>
     </div> 
 ');
@@ -29,9 +29,9 @@ if($status =="guru") {
 } else {
 echo (' 
     <ul>
-    <li><a href="home.html" target="kandungan">Home</a></li>
-    <li><a href="jawab_mula.php" target="kandungan">Soalan</a></li>
-    <li><a href="logout.php" target="_top">Keluar</a></li>  
+    <li><a class=home href="home.html" target="kandungan">Home</a></li>
+    <li><a class=soalan href="jawab_mula.php" target="kandungan">Soalan</a></li>
+    <li><a class=logout href="logout.php" target="_top">Keluar</a></li>  
     </ul>
     </div>
 ');
